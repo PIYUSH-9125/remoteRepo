@@ -1,0 +1,18 @@
+{
+  "name": "remoterepo",
+  "version": "1.0.0",
+  "description": "This is a demo Repository.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "npm install express ejs "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0"
+  }
+}
