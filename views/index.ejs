@@ -2,10 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gym Owner App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+        header { background: #222; color: #fff; padding: 20px 0; text-align: center; }
+        nav { background: #444; padding: 10px 0; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; }
+        .container { max-width: 900px; margin: 30px auto; background: #fff; padding: 30px; border-radius: 8px; }
+        h1, h2 { margin-top: 0; }
+        .features { display: flex; flex-wrap: wrap; gap: 20px; }
+        .feature { flex: 1 1 250px; background: #eee; padding: 20px; border-radius: 6px; }
+        footer { background: #222; color: #fff; text-align: center; padding: 15px 0; margin-top: 40px; }
+        @media (max-width: 600px) {
+            .features { flex-direction: column; }
+        }
+    </style>
 </head>
 <body>
-    Hello World!!!
+    <header>
+        <h1>Gym Owner App</h1>
+        <p>Manage your gym, members, trainers, and schedules with ease!</p>
+    </header>
+    <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Members</a>
+        <a href="#">Trainers</a>
+        <a href="#">Classes</a>
+        <a href="#">Settings</a>
+    </nav>
+    <div class="container">
+        <h2>Welcome, Gym Owner!</h2>
+        <p>This app helps you manage your gym efficiently. Track memberships, trainers, class schedules, and more.</p>
+        <div class="features">
+            <div class="feature">
+                <h3>Member Management</h3>
+                <p>Add, edit, or remove gym members. Track attendance and payments.</p>
+            </div>
+            <div class="feature">
+                <h3>Trainer Management</h3>
+                <p>Assign trainers to classes, manage their schedules and profiles.</p>
+            </div>
+            <div class="feature">
+                <h3>Class Scheduling</h3>
+                <p>Create and manage fitness classes, set timings, and enroll members.</p>
+            </div>
+            <div class="feature">
+                <h3>Reports & Analytics</h3>
+                <p>View reports on membership growth, revenue, and attendance trends.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; <%= new Date().getFullYear() %> Gym Owner App. All rights reserved.
+    </footer>
 </body>
 </html>
